@@ -5,11 +5,11 @@
   </div>
 </template>
 
-<!--<script>
+<script>
 export default {
   name: "Head"
 }
-</script>-->
+</script>
 
 <style scoped>
 .nav{

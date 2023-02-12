@@ -1,11 +1,12 @@
 <script setup>
 import Head from "./components/Head.vue";
 import Foot from "./components/Foot.vue";
+import Content from "./components/Content.vue";
 </script>
 
 <template>
   <Head/>
-  <div>This is content</div>
+  <Content/>
   <Foot/>
 </template>
 
