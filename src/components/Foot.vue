@@ -2,11 +2,11 @@
   <div class="foot"></div>
 </template>
 
-<!--<script>
+<script>
 export default {
   name: "Foot"
 }
-</script>-->
+</script>
 
 <style scoped>
 
