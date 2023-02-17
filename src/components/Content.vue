@@ -1,6 +1,7 @@
 <template>
   <div class="content">
     <div class="todo-box">
+
     </div>
   </div>
 </template>
@@ -12,16 +13,21 @@ export default {
 </script>
 
 <style scoped>
+
 .content{
-  background-color: #888888;
+  background: linear-gradient(to top, white, 40%, orange);
   height: 1000px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-box{
-  width: 500px;
-  height: 300px;
-  background-color: azure;
+  width: 900px;
+  height: 800px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 </style>
