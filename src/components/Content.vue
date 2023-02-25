@@ -5,6 +5,8 @@
         <p>星期二</p>
         <p>2023-02-21</p>
       </div>
+      <div class="todo-input">
+      </div>
     </div>
   </div>
 </template>
@@ -24,6 +26,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .todo-box{
@@ -34,7 +37,7 @@ export default {
 }
 
 .todo-box-time{
-  height: 50px;
+  height: auto;
   position: relative;
   left:50px;
   top:50px;
@@ -44,6 +47,13 @@ export default {
   align-items: flex-start;
   font-weight: bold;
   color: red;
+  font-size: 20px;
+}
+
+.todo-input{
+  width: 300px;
+  height: 100px;
+  background-color: #888888;
 }
 
 
