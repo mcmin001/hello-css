@@ -8,11 +8,21 @@
         <p>2023-02-21</p>
       </div>
 
-      <div class="todo-input">
+      <div class="todo-input-div">
+        <input class="todo-input" type="text">
+        <button class="todo-input-add-btn">新增</button>
+      </div>
+
+      <div class="todo-title">
+        你有1个待办事项
+      </div>
+
+      <div class="undo-list">
+        <input type="checkbox" name="f" value="ff"><label>fff</label>
       </div>
 
     </div>
-    
+
   </div>
 </template>
 
@@ -52,12 +62,45 @@ export default {
   font-weight: bold;
   color: red;
   font-size: 20px;
-  padding-left: 200px;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+.todo-input-div {
+  width: 100%;
+  height: 50px;
+  background-color: #888888;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .todo-input {
-  width: 300px;
-  height: 100px;
-  background-color: #888888;
+  width: 600px;
+  margin-left: 100px;
+}
+
+.todo-input-add-btn {
+  width: 150px;
+  margin-right: 100px;
+}
+
+.todo-title {
+  color: red;
+  margin-top: 10px;
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+.undo-list{
+  width: 100px;
+  background-color: aquamarine;
+}
+
+.undo-list input[type="checkbox"] + label{
+  width: 220px;
+  height: 22px;
+  border-radius: 2px;
+  border: 1px solid #cfdcec;
+  background-color: #fff;
 }
 </style>
