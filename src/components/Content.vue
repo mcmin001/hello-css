@@ -18,7 +18,8 @@
       </div>
 
       <div class="undo-list">
-        <input type="checkbox" name="f" value="ff"><label>fff</label>
+        <input type="checkbox" name="f" value="ff" class="undo-checkbox" id="checkbox1">
+        <label class="undo-checkbox-label" for="checkbox1">fff</label>
       </div>
 
     </div>
@@ -91,16 +92,33 @@ export default {
   font-size: 20px;
 }
 
-.undo-list{
+.undo-list {
   width: 100px;
   background-color: aquamarine;
 }
 
-.undo-list input[type="checkbox"] + label{
+/* .undo-list input[type="checkbox"] + label{
   width: 220px;
   height: 22px;
   border-radius: 2px;
   border: 1px solid #cfdcec;
   background-color: #fff;
+} */
+
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+.undo-checkbox {
+}
+
+.undo-checkbox-label::before {  
+    content: '\a0';
+    display: inline-block;
+    border: 1px solid silver;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
 }
 </style>
