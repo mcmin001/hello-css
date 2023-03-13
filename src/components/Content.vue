@@ -34,6 +34,10 @@ export default {
 </script>
 
 <style scoped>
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
 .content {
   background: linear-gradient(to top, white, 40%, orange);
   height: 1000px;
@@ -93,32 +97,21 @@ export default {
 }
 
 .undo-list {
-  width: 100px;
+  width: 100%;
+  height: auto;
   background-color: aquamarine;
+  display: flex;
+  justify-content: left;
 }
 
-/* .undo-list input[type="checkbox"] + label{
-  width: 220px;
-  height: 22px;
-  border-radius: 2px;
-  border: 1px solid #cfdcec;
-  background-color: #fff;
-} */
-
-/* input[type="checkbox"] {
-  display: none;
-} */
-
-.undo-checkbox {
+.undo-checkbox-label {
+  display: block;
+  width: 200px;
+  height: 20px;
+  margin-left: 100px;
+  cursor: pointer;
+  position: absolute;
+  border: 1px solid #ccc;
 }
 
-.undo-checkbox-label::before {  
-    content: '\a0';
-    display: inline-block;
-    border: 1px solid silver;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    font-weight: bold;
-}
 </style>
