@@ -19,7 +19,7 @@
 
       <div class="undo-list">
         <input type="checkbox" name="f" value="ff" class="undo-checkbox" id="checkbox1">
-        <label class="undo-checkbox-label" for="checkbox1">fff</label>
+        <label class="undo-checkbox-label" for="checkbox1"></label>
       </div>
 
     </div>
@@ -34,9 +34,6 @@ export default {
 </script>
 
 <style scoped>
-input[type="checkbox"] {
-  visibility: hidden;
-}
 
 .content {
   background: linear-gradient(to top, white, 40%, orange);
@@ -104,14 +101,25 @@ input[type="checkbox"] {
   justify-content: left;
 }
 
-.undo-checkbox-label {
-  display: block;
-  width: 200px;
-  height: 20px;
-  margin-left: 100px;
+.undo-list input[type="checkbox"]{
+  display: none;
+}
+
+.undo-list input[type="checkbox"] + label {
   cursor: pointer;
-  position: absolute;
-  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.undo-list input[type="checkbox"]:checked + label::after {
+  content: "√";
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  transform-origin: center center;
 }
 
 </style>
